@@ -39,7 +39,11 @@
   - 1 airflow-webserver
   - 1 postgres database
   - 1 redis message queue
-    - redis is unhealthy for some reason [FIX-THIS]
+- Issues on startup:
+  - redis is unhealthy for some reason
+    - fixed by adding `ALLOW_EMPTY_PASSWORD=yes` as environment variable in `docker-compose.yml`
+  - Now api-server failed to start due to authentication manager not configured [FIX]
+    - seems like due to `No module named 'airflow.providers.fab'`
 - We can now login on `localhost:8080` with the `airflow` default credentials
 
 ---

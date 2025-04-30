@@ -1,0 +1,59 @@
+Attaching to airflow-starter-airflow-init-1
+airflow-starter-airflow-init-1  | The container is run as root user. For security, consider using a regular user account.
+airflow-starter-airflow-init-1  | 
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:32.511+0000[0m] {[34mconfiguration.py:[0m1194} WARNING[0m - No module named 'airflow.providers.fab'[0m
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:32.512+0000[0m] {[34mcli_parser.py:[0m77} WARNING[0m - cannot load CLI commands from auth manager: The object could not be loaded. Please check "auth_manager" key in "core" section. Current value: "airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager".[0m
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:32.512+0000[0m] {[34mcli_parser.py:[0m78} WARNING[0m - Authentication manager is not configured and webserver will not be able to start.[0m
+airflow-starter-airflow-init-1  | DB: postgresql+psycopg2://airflow:***@postgres/airflow
+airflow-starter-airflow-init-1  | Performing upgrade to the metadata database postgresql+psycopg2://airflow:***@postgres/airflow
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:33.681+0000[0m] {[34mmigration.py:[0m216} INFO[0m - Context impl PostgresqlImpl.[0m
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:33.682+0000[0m] {[34mmigration.py:[0m219} INFO[0m - Will assume transactional DDL.[0m
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:33.683+0000[0m] {[34mmigration.py:[0m216} INFO[0m - Context impl PostgresqlImpl.[0m
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:33.683+0000[0m] {[34mmigration.py:[0m219} INFO[0m - Will assume transactional DDL.[0m
+airflow-starter-airflow-init-1  | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+airflow-starter-airflow-init-1  | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+airflow-starter-airflow-init-1  | INFO  [alembic.runtime.migration] Running stamp_revision  -> 88344c1d9134
+airflow-starter-airflow-init-1  | Database migrating done!
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:35.533+0000[0m] {[34mconfiguration.py:[0m1194} WARNING[0m - No module named 'airflow.providers.fab'[0m
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:35.533+0000[0m] {[34mcli_parser.py:[0m77} WARNING[0m - cannot load CLI commands from auth manager: The object could not be loaded. Please check "auth_manager" key in "core" section. Current value: "airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager".[0m
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:35.533+0000[0m] {[34mcli_parser.py:[0m78} WARNING[0m - Authentication manager is not configured and webserver will not be able to start.[0m
+airflow-starter-airflow-init-1  | Usage: airflow [-h] GROUP_OR_COMMAND ...
+airflow-starter-airflow-init-1  | 
+airflow-starter-airflow-init-1  | Positional Arguments:
+airflow-starter-airflow-init-1  |   GROUP_OR_COMMAND
+airflow-starter-airflow-init-1  | 
+airflow-starter-airflow-init-1  |     Groups
+airflow-starter-airflow-init-1  |       celery         Celery components
+airflow-starter-airflow-init-1  |       config         View configuration
+airflow-starter-airflow-init-1  |       connections    Manage connections
+airflow-starter-airflow-init-1  |       dags           Manage DAGs
+airflow-starter-airflow-init-1  |       db             Database operations
+airflow-starter-airflow-init-1  |       jobs           Manage jobs
+airflow-starter-airflow-init-1  |       pools          Manage pools
+airflow-starter-airflow-init-1  |       providers      Display providers
+airflow-starter-airflow-init-1  |       tasks          Manage tasks
+airflow-starter-airflow-init-1  |       variables      Manage variables
+airflow-starter-airflow-init-1  | 
+airflow-starter-airflow-init-1  |     Commands:
+airflow-starter-airflow-init-1  |       cheat-sheet    Display cheat sheet
+airflow-starter-airflow-init-1  |       dag-processor  Start a standalone Dag Processor instance
+airflow-starter-airflow-init-1  |       info           Show information about current Airflow and environment
+airflow-starter-airflow-init-1  |       kerberos       Start a kerberos ticket renewer
+airflow-starter-airflow-init-1  |       plugins        Dump information about loaded plugins
+airflow-starter-airflow-init-1  |       rotate-fernet-key
+airflow-starter-airflow-init-1  |                      Rotate encrypted connection credentials and variables
+airflow-starter-airflow-init-1  |       scheduler      Start a scheduler instance
+airflow-starter-airflow-init-1  |       standalone     Run an all-in-one copy of Airflow
+airflow-starter-airflow-init-1  |       triggerer      Start a triggerer instance
+airflow-starter-airflow-init-1  |       version        Show the version
+airflow-starter-airflow-init-1  |       webserver      Start a Airflow webserver instance
+airflow-starter-airflow-init-1  | 
+airflow-starter-airflow-init-1  | Optional Arguments:
+airflow-starter-airflow-init-1  |   -h, --help         show this help message and exit
+airflow-starter-airflow-init-1  | 
+airflow-starter-airflow-init-1  | airflow command error: argument GROUP_OR_COMMAND: invalid choice: 'users' (choose from 'celery', 'cheat-sheet', 'config', 'connections', 'dag-processor', 'dags', 'db', 'info', 'jobs', 'kerberos', 'plugins', 'pools', 'providers', 'rotate-fernet-key', 'scheduler', 'standalone', 'tasks', 'triggerer', 'variables', 'version', 'webserver'), see help above.
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:36.265+0000[0m] {[34mconfiguration.py:[0m1194} WARNING[0m - No module named 'airflow.providers.fab'[0m
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:36.265+0000[0m] {[34mcli_parser.py:[0m77} WARNING[0m - cannot load CLI commands from auth manager: The object could not be loaded. Please check "auth_manager" key in "core" section. Current value: "airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager".[0m
+airflow-starter-airflow-init-1  | [[34m2025-04-30T04:06:36.266+0000[0m] {[34mcli_parser.py:[0m78} WARNING[0m - Authentication manager is not configured and webserver will not be able to start.[0m
+airflow-starter-airflow-init-1  | 2.8.1
+airflow-starter-airflow-init-1 exited with code 0

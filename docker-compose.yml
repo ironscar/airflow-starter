@@ -105,6 +105,8 @@ services:
     # Redis is limited to 7.2-bookworm due to licencing change
     # https://redis.io/blog/redis-adopts-dual-source-available-licensing/
     image: artifactory.itg.ti.com/docker-public/bitnami/redis:7.2.1-debian-11-r0
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
     expose:
       - 6379
     healthcheck:
