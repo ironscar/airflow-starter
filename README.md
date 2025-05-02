@@ -44,6 +44,10 @@
     - fixed by adding `ALLOW_EMPTY_PASSWORD=yes` as environment variable in `docker-compose.yml`
   - Now api-server failed to start due to authentication manager not configured [FIX]
     - seems like due to `No module named 'airflow.providers.fab'`
+    - also seems like the FabAuthManager only works for airflow above v2.9.0
+    - TRIALS:
+      - thus we will use the default `SimpleAuthManager` which is not meant for PROD deployments [FAIL]
+      - tried directly running `docker-compose up` without `airflow-init` [FAIL]
 - We can now login on `localhost:8080` with the `airflow` default credentials
 
 ---
