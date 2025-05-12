@@ -62,7 +62,7 @@
 - We can now login on `localhost:8080` with the `airflow` and `airflow` default credentials
   - turns out we can directly run `docker-compose up` to do everything
     - `airflow-init` is not necessarily required unless it is to generate the `airflow.cfg` file and update the dag_processor config
-  - to stop the setup but not remove everything, we can run `docker-compose down`
+  - to stop the setup and remove containers but not volumes, we can run `docker-compose down`
   - to start everything again, we can run `docker-compose up -d`
   - it takes about a minute for everything to start up and about 30 seconds longer for the worker to get started (probably because of the health-check though)
 
