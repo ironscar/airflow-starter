@@ -70,6 +70,7 @@
 
 ## Tutorials
 
+- Try out `docker-compose start/stop` to see how long it takes and if it works [TODO]
 - Continue from https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html
 
 ---
