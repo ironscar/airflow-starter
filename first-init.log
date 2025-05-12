@@ -1,0 +1,70 @@
+Attaching to airflow-starter-airflow-init-1
+airflow-starter-airflow-init-1  | The container is run as root user. For security, consider using a regular user account.
+airflow-starter-airflow-init-1  | 
+airflow-starter-airflow-init-1  | DB: postgresql+psycopg2://airflow:***@postgres/airflow
+airflow-starter-airflow-init-1  | Performing upgrade to the metadata database postgresql+psycopg2://airflow:***@postgres/airflow
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:31.005+0000] {migration.py:207} INFO - Context impl PostgresqlImpl.
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:31.006+0000] {migration.py:210} INFO - Will assume transactional DDL.
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:31.007+0000] {migration.py:207} INFO - Context impl PostgresqlImpl.
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:31.008+0000] {migration.py:210} INFO - Will assume transactional DDL.
+airflow-starter-airflow-init-1  | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+airflow-starter-airflow-init-1  | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+airflow-starter-airflow-init-1  | INFO  [alembic.runtime.migration] Running stamp_revision  -> 5f2621c13b39
+airflow-starter-airflow-init-1  | Database migrating done!
+airflow-starter-airflow-init-1  | /home/airflow/.local/lib/python3.12/site-packages/flask_limiter/extension.py:333 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.177+0000] {override.py:1508} INFO - Inserted Role: Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.180+0000] {override.py:965} WARNING - No user yet created, use flask fab command to do it.
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.219+0000] {override.py:1912} INFO - Created Permission View: can edit on Passwords
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.226+0000] {override.py:1963} INFO - Added Permission can edit on Passwords to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.235+0000] {override.py:1912} INFO - Created Permission View: can read on Passwords
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.239+0000] {override.py:1963} INFO - Added Permission can read on Passwords to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.251+0000] {override.py:1912} INFO - Created Permission View: can edit on My Password
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.256+0000] {override.py:1963} INFO - Added Permission can edit on My Password to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.261+0000] {override.py:1912} INFO - Created Permission View: can read on My Password
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.266+0000] {override.py:1963} INFO - Added Permission can read on My Password to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.277+0000] {override.py:1912} INFO - Created Permission View: can edit on My Profile
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.282+0000] {override.py:1963} INFO - Added Permission can edit on My Profile to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.287+0000] {override.py:1912} INFO - Created Permission View: can read on My Profile
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.291+0000] {override.py:1963} INFO - Added Permission can read on My Profile to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.321+0000] {override.py:1912} INFO - Created Permission View: can create on Users
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.325+0000] {override.py:1963} INFO - Added Permission can create on Users to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.332+0000] {override.py:1912} INFO - Created Permission View: can read on Users
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.336+0000] {override.py:1963} INFO - Added Permission can read on Users to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.342+0000] {override.py:1912} INFO - Created Permission View: can edit on Users
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.346+0000] {override.py:1963} INFO - Added Permission can edit on Users to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.355+0000] {override.py:1912} INFO - Created Permission View: can delete on Users
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.359+0000] {override.py:1963} INFO - Added Permission can delete on Users to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.367+0000] {override.py:1912} INFO - Created Permission View: menu access on List Users
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.372+0000] {override.py:1963} INFO - Added Permission menu access on List Users to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.382+0000] {override.py:1912} INFO - Created Permission View: menu access on Security
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.387+0000] {override.py:1963} INFO - Added Permission menu access on Security to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.414+0000] {override.py:1912} INFO - Created Permission View: can create on Roles
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.419+0000] {override.py:1963} INFO - Added Permission can create on Roles to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.427+0000] {override.py:1912} INFO - Created Permission View: can read on Roles
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.433+0000] {override.py:1963} INFO - Added Permission can read on Roles to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.439+0000] {override.py:1912} INFO - Created Permission View: can edit on Roles
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.443+0000] {override.py:1963} INFO - Added Permission can edit on Roles to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.449+0000] {override.py:1912} INFO - Created Permission View: can delete on Roles
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.454+0000] {override.py:1963} INFO - Added Permission can delete on Roles to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.466+0000] {override.py:1912} INFO - Created Permission View: menu access on List Roles
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.470+0000] {override.py:1963} INFO - Added Permission menu access on List Roles to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.487+0000] {override.py:1912} INFO - Created Permission View: can read on User Stats Chart
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.492+0000] {override.py:1963} INFO - Added Permission can read on User Stats Chart to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.507+0000] {override.py:1912} INFO - Created Permission View: menu access on User's Statistics
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.514+0000] {override.py:1963} INFO - Added Permission menu access on User's Statistics to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.548+0000] {override.py:1912} INFO - Created Permission View: can read on Permissions
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.554+0000] {override.py:1963} INFO - Added Permission can read on Permissions to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.564+0000] {override.py:1912} INFO - Created Permission View: menu access on Actions
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.568+0000] {override.py:1963} INFO - Added Permission menu access on Actions to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.598+0000] {override.py:1912} INFO - Created Permission View: can read on View Menus
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.602+0000] {override.py:1963} INFO - Added Permission can read on View Menus to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.615+0000] {override.py:1912} INFO - Created Permission View: menu access on Resources
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.620+0000] {override.py:1963} INFO - Added Permission menu access on Resources to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.649+0000] {override.py:1912} INFO - Created Permission View: can read on Permission Views
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.655+0000] {override.py:1963} INFO - Added Permission can read on Permission Views to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.666+0000] {override.py:1912} INFO - Created Permission View: menu access on Permission Pairs
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:34.673+0000] {override.py:1963} INFO - Added Permission menu access on Permission Pairs to role Admin
+airflow-starter-airflow-init-1  | [2025-05-12T22:14:36.497+0000] {override.py:1597} INFO - Added user airflow
+airflow-starter-airflow-init-1  | User "airflow" created with role "Admin"
+airflow-starter-airflow-init-1  | 2.10.5
+airflow-starter-airflow-init-1 exited with code 0

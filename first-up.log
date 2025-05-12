@@ -1,0 +1,738 @@
+Attaching to airflow-starter-airflow-dag-processor-1, airflow-starter-airflow-init-1, airflow-starter-airflow-scheduler-1, airflow-starter-airflow-triggerer-1, airflow-starter-airflow-webserver-1, airflow-starter-airflow-worker-1, airflow-starter-postgres-1, airflow-starter-redis-1
+airflow-starter-airflow-init-1           | The container is run as root user. For security, consider using a regular user account.
+airflow-starter-airflow-init-1           | 
+airflow-starter-airflow-init-1           | DB: postgresql+psycopg2://airflow:***@postgres/airflow
+airflow-starter-airflow-init-1           | Performing upgrade to the metadata database postgresql+psycopg2://airflow:***@postgres/airflow
+airflow-starter-airflow-init-1           | [2025-05-12T22:01:58.569+0000] {migration.py:207} INFO - Context impl PostgresqlImpl.
+airflow-starter-airflow-init-1           | [2025-05-12T22:01:58.570+0000] {migration.py:210} INFO - Will assume transactional DDL.
+airflow-starter-airflow-init-1           | [2025-05-12T22:01:58.575+0000] {migration.py:207} INFO - Context impl PostgresqlImpl.
+airflow-starter-airflow-init-1           | [2025-05-12T22:01:58.575+0000] {migration.py:210} INFO - Will assume transactional DDL.
+airflow-starter-airflow-init-1           | [2025-05-12T22:01:58.577+0000] {db.py:1675} INFO - Creating tables
+airflow-starter-airflow-init-1           | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+airflow-starter-airflow-init-1           | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+airflow-starter-airflow-init-1           | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+airflow-starter-airflow-init-1           | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+airflow-starter-airflow-init-1           | Database migrating done!
+airflow-starter-airflow-init-1           | /home/airflow/.local/lib/python3.12/site-packages/flask_limiter/extension.py:333 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+airflow-starter-airflow-init-1           | airflow already exist in the db
+airflow-starter-airflow-init-1           | 2.10.5
+airflow-starter-airflow-init-1 exited with code 0
+airflow-starter-airflow-triggerer-1      | 
+airflow-starter-airflow-dag-processor-1  | 
+airflow-starter-airflow-webserver-1      | 
+airflow-starter-airflow-scheduler-1      | 
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:14.805+0000] {configuration.py:2112} INFO - Creating new FAB webserver config file in: /opt/airflow/webserver_config.py
+airflow-starter-airflow-triggerer-1      |   ____________       _____________
+airflow-starter-airflow-triggerer-1      |  ____    |__( )_________  __/__  /________      __
+airflow-starter-airflow-triggerer-1      | ____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+airflow-starter-airflow-triggerer-1      | ___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+airflow-starter-airflow-triggerer-1      |  _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+airflow-starter-airflow-triggerer-1      | [2025-05-12 22:02:15 +0000] [15] [INFO] Starting gunicorn 23.0.0
+airflow-starter-airflow-triggerer-1      | [2025-05-12 22:02:15 +0000] [15] [INFO] Listening at: http://[::]:8794 (15)
+airflow-starter-airflow-triggerer-1      | [2025-05-12 22:02:15 +0000] [15] [INFO] Using worker: sync
+airflow-starter-airflow-triggerer-1      | [2025-05-12 22:02:15 +0000] [16] [INFO] Booting worker with pid: 16
+airflow-starter-airflow-triggerer-1      | [2025-05-12 22:02:15 +0000] [17] [INFO] Booting worker with pid: 17
+airflow-starter-airflow-triggerer-1      | [2025-05-12T22:02:17.344+0000] {triggerer_job_runner.py:181} INFO - Setting up TriggererHandlerWrapper with handler <FileTaskHandler (NOTSET)>
+airflow-starter-airflow-triggerer-1      | [2025-05-12T22:02:17.346+0000] {triggerer_job_runner.py:237} INFO - Setting up logging queue listener with handlers [<RedirectStdHandler <stdout> (NOTSET)>, <TriggererHandlerWrapper (NOTSET)>]
+airflow-starter-airflow-triggerer-1      | [2025-05-12T22:02:17.359+0000] {triggerer_job_runner.py:338} INFO - Starting the triggerer
+airflow-starter-airflow-dag-processor-1  | [2025-05-12T22:02:17.528+0000] {settings.py:63} INFO - Configured default timezone UTC
+airflow-starter-airflow-dag-processor-1  | [2025-05-12T22:02:17.611+0000] {dag_processor_job_runner.py:60} INFO - Starting the Dag Processor Job
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/flask_limiter/extension.py:333 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+airflow-starter-airflow-scheduler-1      | BACKEND=redis
+airflow-starter-airflow-scheduler-1      | DB_HOST=redis
+airflow-starter-airflow-scheduler-1      | DB_PORT=6379
+airflow-starter-airflow-scheduler-1      | 
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.199+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Runs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.209+0000] {override.py:1963} INFO - Added Permission can create on DAG Runs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.216+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Runs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.221+0000] {override.py:1963} INFO - Added Permission can read on DAG Runs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.228+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG Runs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.234+0000] {override.py:1963} INFO - Added Permission can edit on DAG Runs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.244+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Runs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.250+0000] {override.py:1963} INFO - Added Permission can delete on DAG Runs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.256+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Runs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.261+0000] {override.py:1963} INFO - Added Permission menu access on DAG Runs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.276+0000] {override.py:1912} INFO - Created Permission View: menu access on Browse
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.281+0000] {override.py:1963} INFO - Added Permission menu access on Browse to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.307+0000] {override.py:1912} INFO - Created Permission View: can read on Jobs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.316+0000] {override.py:1963} INFO - Added Permission can read on Jobs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.324+0000] {override.py:1912} INFO - Created Permission View: menu access on Jobs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.334+0000] {override.py:1963} INFO - Added Permission menu access on Jobs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.377+0000] {override.py:1912} INFO - Created Permission View: can read on Audit Logs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.384+0000] {override.py:1963} INFO - Added Permission can read on Audit Logs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.392+0000] {override.py:1912} INFO - Created Permission View: menu access on Audit Logs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.400+0000] {override.py:1963} INFO - Added Permission menu access on Audit Logs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.446+0000] {override.py:1912} INFO - Created Permission View: can create on Variables
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.451+0000] {override.py:1963} INFO - Added Permission can create on Variables to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.458+0000] {override.py:1912} INFO - Created Permission View: can read on Variables
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.465+0000] {override.py:1963} INFO - Added Permission can read on Variables to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.471+0000] {override.py:1912} INFO - Created Permission View: can edit on Variables
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.477+0000] {override.py:1963} INFO - Added Permission can edit on Variables to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.484+0000] {override.py:1912} INFO - Created Permission View: can delete on Variables
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.492+0000] {override.py:1963} INFO - Added Permission can delete on Variables to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.498+0000] {override.py:1912} INFO - Created Permission View: menu access on Variables
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.505+0000] {override.py:1963} INFO - Added Permission menu access on Variables to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.520+0000] {override.py:1912} INFO - Created Permission View: menu access on Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.526+0000] {override.py:1963} INFO - Added Permission menu access on Admin to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.559+0000] {override.py:1912} INFO - Created Permission View: can create on Task Instances
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.565+0000] {override.py:1963} INFO - Added Permission can create on Task Instances to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.572+0000] {override.py:1912} INFO - Created Permission View: can read on Task Instances
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.578+0000] {override.py:1963} INFO - Added Permission can read on Task Instances to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.584+0000] {override.py:1912} INFO - Created Permission View: can edit on Task Instances
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.591+0000] {override.py:1963} INFO - Added Permission can edit on Task Instances to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.597+0000] {override.py:1912} INFO - Created Permission View: can delete on Task Instances
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.602+0000] {override.py:1963} INFO - Added Permission can delete on Task Instances to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.608+0000] {override.py:1912} INFO - Created Permission View: menu access on Task Instances
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.613+0000] {override.py:1963} INFO - Added Permission menu access on Task Instances to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.649+0000] {override.py:1912} INFO - Created Permission View: can read on Task Reschedules
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.670+0000] {override.py:1963} INFO - Added Permission can read on Task Reschedules to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.680+0000] {override.py:1912} INFO - Created Permission View: menu access on Task Reschedules
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.686+0000] {override.py:1963} INFO - Added Permission menu access on Task Reschedules to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.724+0000] {override.py:1912} INFO - Created Permission View: can read on Triggers
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.731+0000] {override.py:1963} INFO - Added Permission can read on Triggers to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.740+0000] {override.py:1912} INFO - Created Permission View: menu access on Triggers
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.748+0000] {override.py:1963} INFO - Added Permission menu access on Triggers to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.777+0000] {override.py:1912} INFO - Created Permission View: can read on Configurations
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.783+0000] {override.py:1963} INFO - Added Permission can read on Configurations to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.789+0000] {override.py:1912} INFO - Created Permission View: menu access on Configurations
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.794+0000] {override.py:1963} INFO - Added Permission menu access on Configurations to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.831+0000] {override.py:1912} INFO - Created Permission View: can create on Connections
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.839+0000] {override.py:1963} INFO - Added Permission can create on Connections to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.846+0000] {override.py:1912} INFO - Created Permission View: can read on Connections
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.854+0000] {override.py:1963} INFO - Added Permission can read on Connections to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.862+0000] {override.py:1912} INFO - Created Permission View: can edit on Connections
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.868+0000] {override.py:1963} INFO - Added Permission can edit on Connections to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.875+0000] {override.py:1912} INFO - Created Permission View: can delete on Connections
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.881+0000] {override.py:1963} INFO - Added Permission can delete on Connections to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.887+0000] {override.py:1912} INFO - Created Permission View: menu access on Connections
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.894+0000] {override.py:1963} INFO - Added Permission menu access on Connections to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.935+0000] {override.py:1912} INFO - Created Permission View: can read on SLA Misses
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.941+0000] {override.py:1963} INFO - Added Permission can read on SLA Misses to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.947+0000] {override.py:1912} INFO - Created Permission View: menu access on SLA Misses
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.952+0000] {override.py:1963} INFO - Added Permission menu access on SLA Misses to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.957+0000] {override.py:1912} INFO - Created Permission View: can delete on SLA Misses
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.962+0000] {override.py:1963} INFO - Added Permission can delete on SLA Misses to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.968+0000] {override.py:1912} INFO - Created Permission View: can edit on SLA Misses
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.974+0000] {override.py:1963} INFO - Added Permission can edit on SLA Misses to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:19.997+0000] {override.py:1912} INFO - Created Permission View: can read on Plugins
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.005+0000] {override.py:1963} INFO - Added Permission can read on Plugins to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.013+0000] {override.py:1912} INFO - Created Permission View: menu access on Plugins
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.019+0000] {override.py:1963} INFO - Added Permission menu access on Plugins to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.042+0000] {override.py:1912} INFO - Created Permission View: can read on Providers
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.049+0000] {override.py:1963} INFO - Added Permission can read on Providers to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.058+0000] {override.py:1912} INFO - Created Permission View: menu access on Providers
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.065+0000] {override.py:1963} INFO - Added Permission menu access on Providers to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.105+0000] {override.py:1912} INFO - Created Permission View: can create on Pools
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.113+0000] {override.py:1963} INFO - Added Permission can create on Pools to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.121+0000] {override.py:1912} INFO - Created Permission View: can read on Pools
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.128+0000] {override.py:1963} INFO - Added Permission can read on Pools to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.136+0000] {override.py:1912} INFO - Created Permission View: can edit on Pools
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.144+0000] {override.py:1963} INFO - Added Permission can edit on Pools to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.154+0000] {override.py:1912} INFO - Created Permission View: can delete on Pools
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.162+0000] {override.py:1963} INFO - Added Permission can delete on Pools to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.172+0000] {override.py:1912} INFO - Created Permission View: menu access on Pools
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.178+0000] {override.py:1963} INFO - Added Permission menu access on Pools to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.221+0000] {override.py:1912} INFO - Created Permission View: can read on XComs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.230+0000] {override.py:1963} INFO - Added Permission can read on XComs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.237+0000] {override.py:1912} INFO - Created Permission View: can delete on XComs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.244+0000] {override.py:1963} INFO - Added Permission can delete on XComs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.251+0000] {override.py:1912} INFO - Created Permission View: menu access on XComs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.259+0000] {override.py:1963} INFO - Added Permission menu access on XComs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.295+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Dependencies
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.303+0000] {override.py:1963} INFO - Added Permission menu access on DAG Dependencies to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.346+0000] {override.py:1912} INFO - Created Permission View: menu access on DAGs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.354+0000] {override.py:1963} INFO - Added Permission menu access on DAGs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.368+0000] {override.py:1912} INFO - Created Permission View: menu access on Cluster Activity
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.376+0000] {override.py:1963} INFO - Added Permission menu access on Cluster Activity to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.389+0000] {override.py:1912} INFO - Created Permission View: menu access on Datasets
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.396+0000] {override.py:1963} INFO - Added Permission menu access on Datasets to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.410+0000] {override.py:1912} INFO - Created Permission View: menu access on Documentation
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.420+0000] {override.py:1963} INFO - Added Permission menu access on Documentation to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.435+0000] {override.py:1912} INFO - Created Permission View: menu access on Docs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:20.444+0000] {override.py:1963} INFO - Added Permission menu access on Docs to role Admin
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/airflow/api_connexion/schemas/task_schema.py:52 ChangedInMarshmallow4Warning: `Number` field should not be instantiated. Use `Integer`, `Float`, or `Decimal` instead.
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/airflow/api_connexion/schemas/task_schema.py:55 ChangedInMarshmallow4Warning: `Number` field should not be instantiated. Use `Integer`, `Float`, or `Decimal` instead.
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/airflow/api_connexion/schemas/task_schema.py:59 ChangedInMarshmallow4Warning: `Number` field should not be instantiated. Use `Integer`, `Float`, or `Decimal` instead.
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.309+0000] {override.py:1912} INFO - Created Permission View: can edit on DAGs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.318+0000] {override.py:1912} INFO - Created Permission View: can read on DAGs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.327+0000] {override.py:1912} INFO - Created Permission View: can delete on DAGs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.344+0000] {override.py:1508} INFO - Inserted Role: Public
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.349+0000] {override.py:1508} INFO - Inserted Role: Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.357+0000] {override.py:1963} INFO - Added Permission can read on DAGs to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.366+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Dependencies
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.369+0000] {override.py:1963} INFO - Added Permission can read on DAG Dependencies to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.377+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Code
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.380+0000] {override.py:1963} INFO - Added Permission can read on DAG Code to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.383+0000] {override.py:1963} INFO - Added Permission can read on DAG Runs to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.391+0000] {override.py:1912} INFO - Created Permission View: can read on Datasets
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.395+0000] {override.py:1963} INFO - Added Permission can read on Datasets to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.401+0000] {override.py:1912} INFO - Created Permission View: can read on Cluster Activity
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.403+0000] {override.py:1963} INFO - Added Permission can read on Cluster Activity to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.406+0000] {override.py:1963} INFO - Added Permission can read on Pools to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.415+0000] {override.py:1912} INFO - Created Permission View: can read on ImportError
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.419+0000] {override.py:1963} INFO - Added Permission can read on ImportError to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.426+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Warnings
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.429+0000] {override.py:1963} INFO - Added Permission can read on DAG Warnings to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.436+0000] {override.py:1963} INFO - Added Permission can read on Jobs to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.440+0000] {override.py:1963} INFO - Added Permission can read on My Password to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.444+0000] {override.py:1963} INFO - Added Permission can edit on My Password to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.448+0000] {override.py:1963} INFO - Added Permission can read on My Profile to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.451+0000] {override.py:1963} INFO - Added Permission can edit on My Profile to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.454+0000] {override.py:1963} INFO - Added Permission can read on SLA Misses to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.457+0000] {override.py:1963} INFO - Added Permission can read on Task Instances to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.468+0000] {override.py:1912} INFO - Created Permission View: can read on Task Logs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.472+0000] {override.py:1963} INFO - Added Permission can read on Task Logs to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.476+0000] {override.py:1963} INFO - Added Permission can read on XComs to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.484+0000] {override.py:1912} INFO - Created Permission View: can read on Website
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.487+0000] {override.py:1963} INFO - Added Permission can read on Website to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.490+0000] {override.py:1963} INFO - Added Permission menu access on Browse to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.493+0000] {override.py:1963} INFO - Added Permission menu access on DAGs to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.497+0000] {override.py:1963} INFO - Added Permission menu access on DAG Dependencies to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.499+0000] {override.py:1963} INFO - Added Permission menu access on DAG Runs to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.502+0000] {override.py:1963} INFO - Added Permission menu access on Datasets to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.505+0000] {override.py:1963} INFO - Added Permission menu access on Cluster Activity to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.509+0000] {override.py:1963} INFO - Added Permission menu access on Documentation to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.516+0000] {override.py:1963} INFO - Added Permission menu access on Docs to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.520+0000] {override.py:1963} INFO - Added Permission menu access on Jobs to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.524+0000] {override.py:1963} INFO - Added Permission menu access on SLA Misses to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.528+0000] {override.py:1963} INFO - Added Permission menu access on Task Instances to role Viewer
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.533+0000] {override.py:1508} INFO - Inserted Role: User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.537+0000] {override.py:1963} INFO - Added Permission can read on DAGs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.545+0000] {override.py:1963} INFO - Added Permission can read on DAG Dependencies to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.551+0000] {override.py:1963} INFO - Added Permission can read on DAG Code to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.555+0000] {override.py:1963} INFO - Added Permission can read on DAG Runs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.563+0000] {override.py:1963} INFO - Added Permission can read on Datasets to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.569+0000] {override.py:1963} INFO - Added Permission can read on Cluster Activity to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.573+0000] {override.py:1963} INFO - Added Permission can read on Pools to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.579+0000] {override.py:1963} INFO - Added Permission can read on ImportError to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.585+0000] {override.py:1963} INFO - Added Permission can read on DAG Warnings to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.590+0000] {override.py:1963} INFO - Added Permission can read on Jobs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.593+0000] {override.py:1963} INFO - Added Permission can read on My Password to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.595+0000] {override.py:1963} INFO - Added Permission can edit on My Password to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.598+0000] {override.py:1963} INFO - Added Permission can read on My Profile to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.601+0000] {override.py:1963} INFO - Added Permission can edit on My Profile to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.606+0000] {override.py:1963} INFO - Added Permission can read on SLA Misses to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.610+0000] {override.py:1963} INFO - Added Permission can read on Task Instances to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.619+0000] {override.py:1963} INFO - Added Permission can read on Task Logs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.624+0000] {override.py:1963} INFO - Added Permission can read on XComs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.630+0000] {override.py:1963} INFO - Added Permission can read on Website to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.634+0000] {override.py:1963} INFO - Added Permission menu access on Browse to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.638+0000] {override.py:1963} INFO - Added Permission menu access on DAGs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.642+0000] {override.py:1963} INFO - Added Permission menu access on DAG Dependencies to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.645+0000] {override.py:1963} INFO - Added Permission menu access on DAG Runs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.649+0000] {override.py:1963} INFO - Added Permission menu access on Datasets to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.651+0000] {override.py:1963} INFO - Added Permission menu access on Cluster Activity to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.654+0000] {override.py:1963} INFO - Added Permission menu access on Documentation to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.657+0000] {override.py:1963} INFO - Added Permission menu access on Docs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.660+0000] {override.py:1963} INFO - Added Permission menu access on Jobs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.663+0000] {override.py:1963} INFO - Added Permission menu access on SLA Misses to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.667+0000] {override.py:1963} INFO - Added Permission menu access on Task Instances to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.670+0000] {override.py:1963} INFO - Added Permission can edit on DAGs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.673+0000] {override.py:1963} INFO - Added Permission can delete on DAGs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.675+0000] {override.py:1963} INFO - Added Permission can create on Task Instances to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.678+0000] {override.py:1963} INFO - Added Permission can edit on Task Instances to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.682+0000] {override.py:1963} INFO - Added Permission can delete on Task Instances to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.685+0000] {override.py:1963} INFO - Added Permission can create on DAG Runs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.689+0000] {override.py:1963} INFO - Added Permission can edit on DAG Runs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.692+0000] {override.py:1963} INFO - Added Permission can delete on DAG Runs to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.701+0000] {override.py:1912} INFO - Created Permission View: can create on Datasets
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.705+0000] {override.py:1963} INFO - Added Permission can create on Datasets to role User
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.709+0000] {override.py:1508} INFO - Inserted Role: Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.714+0000] {override.py:1963} INFO - Added Permission can read on DAGs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.722+0000] {override.py:1963} INFO - Added Permission can read on DAG Dependencies to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.728+0000] {override.py:1963} INFO - Added Permission can read on DAG Code to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.731+0000] {override.py:1963} INFO - Added Permission can read on DAG Runs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.737+0000] {override.py:1963} INFO - Added Permission can read on Datasets to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.742+0000] {override.py:1963} INFO - Added Permission can read on Cluster Activity to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.747+0000] {override.py:1963} INFO - Added Permission can read on Pools to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.754+0000] {override.py:1963} INFO - Added Permission can read on ImportError to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.762+0000] {override.py:1963} INFO - Added Permission can read on DAG Warnings to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.766+0000] {override.py:1963} INFO - Added Permission can read on Jobs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.769+0000] {override.py:1963} INFO - Added Permission can read on My Password to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.775+0000] {override.py:1963} INFO - Added Permission can edit on My Password to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.778+0000] {override.py:1963} INFO - Added Permission can read on My Profile to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.781+0000] {override.py:1963} INFO - Added Permission can edit on My Profile to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.785+0000] {override.py:1963} INFO - Added Permission can read on SLA Misses to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.790+0000] {override.py:1963} INFO - Added Permission can read on Task Instances to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.798+0000] {override.py:1963} INFO - Added Permission can read on Task Logs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.802+0000] {override.py:1963} INFO - Added Permission can read on XComs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.811+0000] {override.py:1963} INFO - Added Permission can read on Website to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.816+0000] {override.py:1963} INFO - Added Permission menu access on Browse to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.825+0000] {override.py:1963} INFO - Added Permission menu access on DAGs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.829+0000] {override.py:1963} INFO - Added Permission menu access on DAG Dependencies to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.834+0000] {override.py:1963} INFO - Added Permission menu access on DAG Runs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.837+0000] {override.py:1963} INFO - Added Permission menu access on Datasets to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.841+0000] {override.py:1963} INFO - Added Permission menu access on Cluster Activity to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.846+0000] {override.py:1963} INFO - Added Permission menu access on Documentation to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.850+0000] {override.py:1963} INFO - Added Permission menu access on Docs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.854+0000] {override.py:1963} INFO - Added Permission menu access on Jobs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.858+0000] {override.py:1963} INFO - Added Permission menu access on SLA Misses to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.861+0000] {override.py:1963} INFO - Added Permission menu access on Task Instances to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.865+0000] {override.py:1963} INFO - Added Permission can edit on DAGs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.869+0000] {override.py:1963} INFO - Added Permission can delete on DAGs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.873+0000] {override.py:1963} INFO - Added Permission can create on Task Instances to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.876+0000] {override.py:1963} INFO - Added Permission can edit on Task Instances to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.880+0000] {override.py:1963} INFO - Added Permission can delete on Task Instances to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.883+0000] {override.py:1963} INFO - Added Permission can create on DAG Runs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.887+0000] {override.py:1963} INFO - Added Permission can edit on DAG Runs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.891+0000] {override.py:1963} INFO - Added Permission can delete on DAG Runs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.898+0000] {override.py:1963} INFO - Added Permission can create on Datasets to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.903+0000] {override.py:1963} INFO - Added Permission can read on Configurations to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.907+0000] {override.py:1963} INFO - Added Permission menu access on Admin to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.910+0000] {override.py:1963} INFO - Added Permission menu access on Configurations to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.913+0000] {override.py:1963} INFO - Added Permission menu access on Connections to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.915+0000] {override.py:1963} INFO - Added Permission menu access on Pools to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.919+0000] {override.py:1963} INFO - Added Permission menu access on Plugins to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.922+0000] {override.py:1963} INFO - Added Permission menu access on Variables to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.925+0000] {override.py:1963} INFO - Added Permission menu access on Providers to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.928+0000] {override.py:1963} INFO - Added Permission menu access on XComs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.933+0000] {override.py:1963} INFO - Added Permission can create on Connections to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.937+0000] {override.py:1963} INFO - Added Permission can read on Connections to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.939+0000] {override.py:1963} INFO - Added Permission can edit on Connections to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.943+0000] {override.py:1963} INFO - Added Permission can delete on Connections to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.946+0000] {override.py:1963} INFO - Added Permission can create on Pools to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.949+0000] {override.py:1963} INFO - Added Permission can edit on Pools to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.952+0000] {override.py:1963} INFO - Added Permission can delete on Pools to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.956+0000] {override.py:1963} INFO - Added Permission can read on Plugins to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.959+0000] {override.py:1963} INFO - Added Permission can read on Providers to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.963+0000] {override.py:1963} INFO - Added Permission can create on Variables to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.967+0000] {override.py:1963} INFO - Added Permission can read on Variables to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.970+0000] {override.py:1963} INFO - Added Permission can edit on Variables to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.973+0000] {override.py:1963} INFO - Added Permission can delete on Variables to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.977+0000] {override.py:1963} INFO - Added Permission can delete on XComs to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.986+0000] {override.py:1912} INFO - Created Permission View: can delete on Datasets
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.990+0000] {override.py:1963} INFO - Added Permission can delete on Datasets to role Op
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:23.995+0000] {override.py:1963} INFO - Added Permission can read on DAGs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.000+0000] {override.py:1963} INFO - Added Permission can read on DAG Dependencies to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.005+0000] {override.py:1963} INFO - Added Permission can read on DAG Code to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.012+0000] {override.py:1963} INFO - Added Permission can read on Datasets to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.018+0000] {override.py:1963} INFO - Added Permission can read on Cluster Activity to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.024+0000] {override.py:1963} INFO - Added Permission can read on ImportError to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.033+0000] {override.py:1963} INFO - Added Permission can read on DAG Warnings to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.040+0000] {override.py:1963} INFO - Added Permission can read on Task Logs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.047+0000] {override.py:1963} INFO - Added Permission can read on Website to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.050+0000] {override.py:1963} INFO - Added Permission can edit on DAGs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.053+0000] {override.py:1963} INFO - Added Permission can delete on DAGs to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.058+0000] {override.py:1963} INFO - Added Permission can create on Datasets to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:24.064+0000] {override.py:1963} INFO - Added Permission can delete on Datasets to role Admin
+airflow-starter-airflow-webserver-1      | [2025-05-12 22:02:24 +0000] [16] [INFO] Starting gunicorn 23.0.0
+airflow-starter-airflow-scheduler-1      |   ____________       _____________
+airflow-starter-airflow-scheduler-1      |  ____    |__( )_________  __/__  /________      __
+airflow-starter-airflow-scheduler-1      | ____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+airflow-starter-airflow-scheduler-1      | ___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+airflow-starter-airflow-scheduler-1      |  _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+airflow-starter-airflow-scheduler-1      | [2025-05-12T22:02:24.521+0000] {executor_loader.py:258} INFO - Loaded executor: CeleryExecutor
+airflow-starter-airflow-scheduler-1      | [2025-05-12T22:02:24.594+0000] {scheduler_job_runner.py:950} INFO - Starting the scheduler
+airflow-starter-airflow-scheduler-1      | [2025-05-12T22:02:24.596+0000] {scheduler_job_runner.py:957} INFO - Processing each file at most -1 times
+airflow-starter-airflow-scheduler-1      | [2025-05-12T22:02:24.598+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+airflow-starter-airflow-webserver-1      | [2025-05-12T22:02:30.270+0000] {providers_manager.py:287} INFO - Optional provider feature disabled when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/batch/models/_models_py3.py:4839 SyntaxWarning: invalid escape sequence '\s'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:175 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:222 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1151 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1248 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1271 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1406 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1439 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1495 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1683 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1750 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:2025 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:2110 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:2407 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:2468 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:3987 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:4096 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:4127 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:4186 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:4225 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:4275 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:5209 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:5265 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:5302 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:5358 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:6437 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:6497 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:6538 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:6588 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7023 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7096 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7267 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7333 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7378 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7440 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:8222 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:8282 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:8322 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:8368 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:9475 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:9531 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10532 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10588 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10625 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10680 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10923 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10979 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11016 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11072 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11231 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11282 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11420 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11477 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:12300 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:12383 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:12439 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:12524 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13019 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13090 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13139 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13200 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13886 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13941 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13977 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14026 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14318 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14388 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14436 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14492 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14744 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14810 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15415 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15482 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15527 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15578 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15897 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15953 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16617 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16674 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16712 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16780 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16932 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16988 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:17025 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:17090 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:17228 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:17284 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:20234 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:20289 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:20862 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:20921 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:20960 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21014 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21316 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21377 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21418 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21478 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21612 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21668 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22155 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22218 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22559 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22626 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22671 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22722 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23061 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23128 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23173 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23224 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23511 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23567 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23968 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:24018 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:25343 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:25398 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:25434 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:25485 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:26723 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:26779 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:27121 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:27177 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:27461 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:27517 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28053 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28109 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28536 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28592 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28932 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28982 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:30727 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:30783 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:31296 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:31344 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:31617 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:31673 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32120 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32176 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32339 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32395 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32432 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32487 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:33502 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:33558 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:33869 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:33928 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:33967 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:34021 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:34739 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:34806 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:34852 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:34908 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:36915 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:36971 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:37417 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:37473 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:37845 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:37901 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38208 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38264 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38301 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38351 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38690 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38758 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39141 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39192 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39419 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39487 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39683 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39738 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:40019 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:40084 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41138 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41196 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41359 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41415 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41452 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41507 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41875 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41947 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42441 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42497 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42534 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42590 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42627 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42692 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43020 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43079 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43118 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43168 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43514 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43573 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43612 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43666 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43989 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:44045 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:44386 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:44442 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:45003 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:45058 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:45444 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:45499 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:46042 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:46098 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:46702 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:46758 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:47000 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:47050 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:47648 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:47704 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:48113 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:48190 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:48244 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:48321 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:49499 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:49555 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:49932 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50002 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50052 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50107 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50379 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50449 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50499 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50554 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50590 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50660 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50710 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50770 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51046 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51116 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51166 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51226 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51485 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51540 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51787 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51851 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51895 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51958 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:52212 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:52275 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:52463 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:52532 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:53040 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:53111 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:53334 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:53407 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:53961 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:54059 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:54322 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:54398 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:55022 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:55078 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:55310 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:55365 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:56196 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:56248 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:56508 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:56564 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57087 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57147 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57187 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57237 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57560 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57620 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57660 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57710 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59106 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59162 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59316 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59396 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59452 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59535 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59594 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59677 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59733 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59818 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:60639 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:60722 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:60778 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:60863 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61167 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61250 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61306 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61387 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61696 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61752 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61954 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61992 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:62660 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:62715 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:63882 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:63946 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:64582 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:64674 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:64940 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65014 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65117 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65199 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65385 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65441 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65874 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65950 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66003 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66087 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66686 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66779 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66918 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66964 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:67735 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:67791 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:68043 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:68097 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:68532 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:68588 SyntaxWarning: invalid escape sequence '\d'
+airflow-starter-airflow-webserver-1      | [2025-05-12 22:02:34 +0000] [16] [INFO] Listening at: http://0.0.0.0:8080 (16)
+airflow-starter-airflow-webserver-1      | [2025-05-12 22:02:34 +0000] [16] [INFO] Using worker: sync
+airflow-starter-airflow-webserver-1      | [2025-05-12 22:02:34 +0000] [41] [INFO] Booting worker with pid: 41
+airflow-starter-airflow-webserver-1      | [2025-05-12 22:02:34 +0000] [42] [INFO] Booting worker with pid: 42
+airflow-starter-airflow-webserver-1      | [2025-05-12 22:02:34 +0000] [43] [INFO] Booting worker with pid: 43
+airflow-starter-airflow-webserver-1      | [2025-05-12 22:02:34 +0000] [44] [INFO] Booting worker with pid: 44
+airflow-starter-airflow-scheduler-1      | 127.0.0.1 - - [12/May/2025 22:02:35] "GET /health HTTP/1.1" 200 -
+airflow-starter-airflow-webserver-1      | 127.0.0.1 - - [12/May/2025:22:02:35 +0000] "GET / HTTP/1.1" 302 197 "-" "curl/7.88.1"
+airflow-starter-airflow-worker-1         | 
+airflow-starter-airflow-worker-1         | BACKEND=redis
+airflow-starter-airflow-worker-1         | DB_HOST=redis
+airflow-starter-airflow-worker-1         | DB_PORT=6379
+airflow-starter-airflow-worker-1         | 
+airflow-starter-airflow-worker-1         | [2025-05-12T22:02:49.649+0000] {configuration.py:2112} INFO - Creating new FAB webserver config file in: /opt/airflow/webserver_config.py
+airflow-starter-airflow-worker-1         | [2025-05-12 22:02:50 +0000] [26] [INFO] Starting gunicorn 23.0.0
+airflow-starter-airflow-worker-1         | [2025-05-12 22:02:50 +0000] [26] [INFO] Listening at: http://[::]:8793 (26)
+airflow-starter-airflow-worker-1         | [2025-05-12 22:02:50 +0000] [26] [INFO] Using worker: sync
+airflow-starter-airflow-worker-1         | [2025-05-12 22:02:50 +0000] [27] [INFO] Booting worker with pid: 27
+airflow-starter-airflow-worker-1         | [2025-05-12 22:02:50 +0000] [28] [INFO] Booting worker with pid: 28
+airflow-starter-airflow-worker-1         |  
+airflow-starter-airflow-worker-1         |  -------------- celery@09c562a2f4c2 v5.4.0 (opalescent)
+airflow-starter-airflow-worker-1         | --- ***** ----- 
+airflow-starter-airflow-worker-1         | -- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-12 22:02:51
+airflow-starter-airflow-worker-1         | - *** --- * --- 
+airflow-starter-airflow-worker-1         | - ** ---------- [config]
+airflow-starter-airflow-worker-1         | - ** ---------- .> app:         airflow.providers.celery.executors.celery_executor:0x7f45769855b0
+airflow-starter-airflow-worker-1         | - ** ---------- .> transport:   redis://redis:6379/0
+airflow-starter-airflow-worker-1         | - ** ---------- .> results:     postgresql://airflow:**@postgres/airflow
+airflow-starter-airflow-worker-1         | - *** --- * --- .> concurrency: 16 (prefork)
+airflow-starter-airflow-worker-1         | -- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+airflow-starter-airflow-worker-1         | --- ***** ----- 
+airflow-starter-airflow-worker-1         |  -------------- [queues]
+airflow-starter-airflow-worker-1         |                 .> default          exchange=default(direct) key=default
+airflow-starter-airflow-worker-1         |                 
+airflow-starter-airflow-worker-1         | 
+airflow-starter-airflow-worker-1         | [tasks]
+airflow-starter-airflow-worker-1         |   . airflow.providers.celery.executors.celery_executor_utils.execute_command
+airflow-starter-airflow-worker-1         | 
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:02:53 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-worker-1         | [2025-05-12 22:02:54,706: WARNING/MainProcess] /home/airflow/.local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+airflow-starter-airflow-worker-1         | whether broker connection retries are made during startup in Celery 6.0 and above.
+airflow-starter-airflow-worker-1         | If you wish to retain the existing behavior for retrying connections on startup,
+airflow-starter-airflow-worker-1         | you should set broker_connection_retry_on_startup to True.
+airflow-starter-airflow-worker-1         |   warnings.warn(
+airflow-starter-airflow-worker-1         | 
+airflow-starter-airflow-worker-1         | [2025-05-12 22:02:54,720: INFO/MainProcess] Connected to redis://redis:6379/0
+airflow-starter-airflow-worker-1         | [2025-05-12 22:02:54,722: WARNING/MainProcess] /home/airflow/.local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+airflow-starter-airflow-worker-1         | whether broker connection retries are made during startup in Celery 6.0 and above.
+airflow-starter-airflow-worker-1         | If you wish to retain the existing behavior for retrying connections on startup,
+airflow-starter-airflow-worker-1         | you should set broker_connection_retry_on_startup to True.
+airflow-starter-airflow-worker-1         |   warnings.warn(
+airflow-starter-airflow-worker-1         | 
+airflow-starter-airflow-worker-1         | [2025-05-12 22:02:54,724: INFO/MainProcess] mingle: searching for neighbors
+airflow-starter-airflow-worker-1         | [2025-05-12 22:02:55,736: INFO/MainProcess] mingle: all alone
+airflow-starter-airflow-worker-1         | [2025-05-12 22:02:55,751: INFO/MainProcess] celery@09c562a2f4c2 ready.
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:03:03 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-scheduler-1      | 127.0.0.1 - - [12/May/2025 22:03:05] "GET /health HTTP/1.1" 200 -
+airflow-starter-airflow-webserver-1      | 127.0.0.1 - - [12/May/2025:22:03:05 +0000] "GET / HTTP/1.1" 302 197 "-" "curl/7.88.1"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:03:13 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-triggerer-1      | [2025-05-12T22:03:17.426+0000] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:03:23 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:03:33 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-scheduler-1      | 127.0.0.1 - - [12/May/2025 22:03:35] "GET /health HTTP/1.1" 200 -
+airflow-starter-airflow-webserver-1      | 127.0.0.1 - - [12/May/2025:22:03:35 +0000] "GET / HTTP/1.1" 302 197 "-" "curl/7.88.1"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:03:43 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:03:53 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:04:03 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-scheduler-1      | 127.0.0.1 - - [12/May/2025 22:04:05] "GET /health HTTP/1.1" 200 -
+airflow-starter-airflow-webserver-1      | 127.0.0.1 - - [12/May/2025:22:04:05 +0000] "GET / HTTP/1.1" 302 197 "-" "curl/7.88.1"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:04:13 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-triggerer-1      | [2025-05-12T22:04:17.486+0000] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:04:23 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:04:33 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-scheduler-1      | 127.0.0.1 - - [12/May/2025 22:04:35] "GET /health HTTP/1.1" 200 -
+airflow-starter-airflow-webserver-1      | 127.0.0.1 - - [12/May/2025:22:04:35 +0000] "GET / HTTP/1.1" 302 197 "-" "curl/7.88.1"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:04:43 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:04:53 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:05:03 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-scheduler-1      | 127.0.0.1 - - [12/May/2025 22:05:05] "GET /health HTTP/1.1" 200 -
+airflow-starter-airflow-webserver-1      | 127.0.0.1 - - [12/May/2025:22:05:05 +0000] "GET / HTTP/1.1" 302 197 "-" "curl/7.88.1"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:05:13 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-triggerer-1      | [2025-05-12T22:05:17.542+0000] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:05:23 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:05:33 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-postgres-1               | 2025-05-12 22:05:35.179 UTC [50] LOG:  checkpoint starting: time
+airflow-starter-airflow-scheduler-1      | 127.0.0.1 - - [12/May/2025 22:05:35] "GET /health HTTP/1.1" 200 -
+airflow-starter-airflow-webserver-1      | 127.0.0.1 - - [12/May/2025:22:05:36 +0000] "GET / HTTP/1.1" 302 197 "-" "curl/7.88.1"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:05:43 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:05:54 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:06:04 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-scheduler-1      | 127.0.0.1 - - [12/May/2025 22:06:05] "GET /health HTTP/1.1" 200 -
+airflow-starter-airflow-webserver-1      | 127.0.0.1 - - [12/May/2025:22:06:06 +0000] "GET / HTTP/1.1" 302 197 "-" "curl/7.88.1"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:06:14 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-triggerer-1      | [2025-05-12T22:06:17.605+0000] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+airflow-starter-postgres-1               | 2025-05-12 22:06:23.076 UTC [50] LOG:  checkpoint complete: wrote 481 buffers (2.9%); 1 WAL file(s) added, 0 removed, 0 recycled; write=47.755 s, sync=0.102 s, total=47.897 s; sync files=338, longest=0.008 s, average=0.001 s; distance=2958 kB, estimate=2958 kB; lsn=0/1C4EAE8, redo lsn=0/1BFF368
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:06:24 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"
+airflow-starter-airflow-webserver-1      | 192.168.195.97 - - [12/May/2025:22:06:34 +0000] "GET http://mcp.webwasher.com/test/MCP.txt HTTP/1.1" 404 456 "-" "-"

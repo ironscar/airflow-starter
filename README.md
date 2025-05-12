@@ -37,6 +37,7 @@
   - 1 airflow-worker
   - 1 airflow-scheduler
   - 1 airflow-webserver
+  - 1 airflow-dag-processor
   - 1 postgres database
   - 1 redis message queue
 - Issues on startup:
@@ -48,7 +49,22 @@
     - TRIALS:
       - thus we will use the default `SimpleAuthManager` which is not meant for PROD deployments [FAIL]
       - tried directly running `docker-compose up` without `airflow-init` [FAIL]
-- We can now login on `localhost:8080` with the `airflow` default credentials
+      - used airflow 2.10.5 and this issue got fixed [FIX]
+  - Invalid choice `api-server`
+    - let's change the command on `airflow-apiserver` to `webserver` and rename container accordingly [FIX]
+  - Dag-processor keeps restarting (but was able to login for the first time)
+    - change `standalone_dag_processor` to `True` because config gets generated with False [FIX]
+  - Api-server still showing unhealthy
+    - updated health-check to just `http://localhost:8080` and now it creates worker as well [FIX]
+  - The command never ends due to the health-checks
+    - we can run `docker-compose up -d` [FIX]
+      - but using this doesn't log it if we append `> up.log` to above
+- We can now login on `localhost:8080` with the `airflow` and `airflow` default credentials
+  - turns out we can directly run `docker-compose up` to do everything
+    - `airflow-init` is not necessarily required unless it is to generate the `airflow.cfg` file and update the dag_processor config
+  - to stop the setup but not remove everything, we can run `docker-compose down`
+  - to start everything again, we can run `docker-compose up -d`
+  - it takes about a minute for everything to start up and about 30 seconds longer for the worker to get started (probably because of the health-check though)
 
 ---
 
