@@ -65,10 +65,19 @@
   - to stop the setup but not remove the containers/volumes, we can run `docker-compose stop`
   - to start everything again, we can run `docker-compose start`
   - it takes about a minute for everything to start up and about 30 seconds longer for the worker to get started (probably because of the health-check though)
+    - if the worker doesn't start due to webserver being unhealthy, just run `docker compose run airflow-worker airflow info`
 
 ---
 
 ## Tutorials
+
+- Setup a `my_tutorial_dag.py` in dags folder and that automatically updates in all of the containers' `/opt/airflow/dags` which is what is set for `airflow.cfg` dags_folder
+- To run airflow commands, we can exec into the containers as `docker exec -it <containerId> /bin/bash`
+- Once we did, there were python compilation errors so we fixed it by `pip install apache-airflow-providers-standard` in all the containers except redis and postgres
+- Then we restarted all the containers using `docker-compose stop/start` and then it finally shows up on UI
+- Now, if we add a new DAG file or a new DAG in same file in host directory, it shows up automatically after refreshing the WEB-UI
+- We can delete it from host directory but it doesn't automatically delete on refreshing the WEB-UI (even though its removed from the containers) but we can manually delete it from the WEB-UI
+- Changing the DAG file, like the flow of tasks for example, also updates on the UI in some time or we can choose to `Reparse DAG` from the UI
 
 - Continue from https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html
 
