@@ -17,7 +17,7 @@
 
 ---
 
-## Docker init & run
+## Docker setup
 
 - We can use a docker-compose file specified by the official docs and just use our custom images for postgres, redis and airflow
   - make sure with `docker-compose --version` that its major version v2 as the yml might not work with v1
@@ -69,7 +69,7 @@
 
 ---
 
-## Tutorials
+## First DAG Run
 
 - Setup a `my_tutorial_dag.py` in dags folder and that automatically updates in all of the containers' `/opt/airflow/dags` which is what is set for `airflow.cfg` dags_folder
 - To run airflow commands, we can exec into the containers as `docker exec -it <containerId> /bin/bash`
@@ -78,7 +78,19 @@
 - Now, if we add a new DAG file or a new DAG in same file in host directory, it shows up automatically after refreshing the WEB-UI
 - We can delete it from host directory but it doesn't automatically delete on refreshing the WEB-UI (even though its removed from the containers) but we can manually delete it from the WEB-UI
 - Changing the DAG file, like the flow of tasks for example, also updates on the UI in some time or we can choose to `Reparse DAG` from the UI
+- We can do `Trigger DAG` from WEB-UI and it will run the tasks in the DAG
+  - in the graph tab, we can select the corresponding tasks, and then see the XCom tab if there are any return values (including logging from echo command tasks)
+  - after selecting the task, going to Details tab, we can also see the task description and other details
+- The first DAG was written using the traditional operators like `BashOperator`
 
-- Continue from https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html
+---
+
+## Tutorials
+
+### Pythonic DAG with Taskflow API
+
+- The taskflow API is designed to make code simpler and easier to maintain
+
+- Continue from https://airflow.apache.org/docs/apache-airflow/2.10.2/tutorial/taskflow.html
 
 ---
